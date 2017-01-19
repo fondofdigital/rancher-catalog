@@ -1,0 +1,7 @@
+name: Registry
+description: |
+  Docker registry
+version: 1.0.0
+category: Registry
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://github.com/docker/docker-registry

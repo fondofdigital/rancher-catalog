@@ -1,0 +1,7 @@
+name: magento (dev)
+description: |
+  development environment for magento (apache2, php5, mysql, phpmyadmin)
+version: 1.0.0
+category: shopping cart software
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://magento.com/

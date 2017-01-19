@@ -1,0 +1,28 @@
+wildfly-camel:
+  image: registry.docker.fondofbags.com:5005/docker/wildfly-camel
+  volumes_from:
+  - octopus
+  links:
+  - octopus
+  ports:
+  - ${http_port}:8080
+  - ${api_port}:9990
+  environment:
+    VIRTUAL_HOST: ${subdomain}.docker.fondofbags.com
+    VIRTUAL_PORT: 8080
+    WILDFLY_MANAGEMENT_USER: ${wildfly_management_user}
+    WILDFLY_MANAGEMENT_PASSWORD: ${wildfly_management_password}
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.sidekicks: octopus
+    rap.host: ${subdomain}.docker.fondofbags.com
+    rap.port: 8080
+
+octopus:
+  image: registry.docker.fondofbags.com:5005/docker/octopus
+  labels:
+    io.rancher.container.pull_image: always
+  volumes:
+  - /opt/jboss/octopus/deployments
+  - /opt/jboss/octopus/configuration
+  - /opt/jboss/init.d

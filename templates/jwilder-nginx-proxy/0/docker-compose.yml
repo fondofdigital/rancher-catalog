@@ -1,0 +1,8 @@
+nginx-proxy:
+  image: jwilder/nginx-proxy
+  ports:
+    - ${http_port}:80
+    - ${https_port}:443
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+    - ${path_to_certs}:/etc/nginx/certs

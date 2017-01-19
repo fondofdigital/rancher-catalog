@@ -1,0 +1,27 @@
+.catalog:
+  name: "Registry"
+  version: "1.0.0"
+  description: "Docker registry"
+  uuid: registry-0
+  questions:
+    - variable: virtual_host
+      label: "Virtual Host"
+      required: true
+      type: "string"
+    - variable: registry_port
+      label: "Registry Port"
+      required: true
+      default: 5000
+      type: "int"
+    - variable: path_to_certs
+      label: "Path to certs"
+      required: true
+      type: "string"
+    - variable: path_to_auth
+      label: "Path to auth"
+      required: true
+      type: "string"
+    - variable: path_to_images
+      label: "Path to images"
+      required: true
+      type: "string"

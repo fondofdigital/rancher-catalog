@@ -1,0 +1,7 @@
+name: Wordpress (dev)
+description: |
+   development environment for wordpress (apache2, php5, mysql, phpmyadmin)
+version: 1.0.0
+category: Blogging
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://magento.com/

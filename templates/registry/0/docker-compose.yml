@@ -1,0 +1,16 @@
+registry:
+  restart: always
+  image: registry:latest
+  ports:
+    - ${registry_port}:5000
+  hostname: ${virtual_host}
+  environment:
+    REGISTRY_HTTP_TLS_CERTIFICATE: /certs/${virtual_host}.crt
+    REGISTRY_HTTP_TLS_KEY: /certs/${virtual_host}.key
+    REGISTRY_AUTH: htpasswd
+    REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
+    REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
+  volumes:
+    - ${path_to_images}:/var/lib/registry
+    - ${path_to_certs}:/certs
+    - ${path_to_auth}:/auth

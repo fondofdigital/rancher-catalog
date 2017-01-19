@@ -1,0 +1,7 @@
+name: jwilder nginx-proxy
+description: |
+  Automated nginx proxy for Docker containers using docker-gen
+version: 1.0.0
+category: nginx proxy
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://github.com/jwilder/nginx-proxy

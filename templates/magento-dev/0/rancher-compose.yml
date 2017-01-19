@@ -1,0 +1,14 @@
+.catalog:
+  name: "magento (dev)"
+  version: "1.0.0"
+  description: "development environment for magento (apache2, php5, mysql, phpmyadmin)"
+  uuid: magento-0
+  questions:
+    - variable: virtual_host
+      label: "Virtual Host"
+      required: true
+      type: "string"
+    - variable: path_to_magento_project
+      label: "Path to magento project"
+      required: true
+      type: "string"

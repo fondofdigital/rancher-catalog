@@ -1,0 +1,20 @@
+.catalog:
+  name: "jwilder nginx-proxy"
+  version: "1.0.0"
+  description: "Automated nginx proxy for Docker containers using docker-gen"
+  uuid: nginx-proxy-0
+  questions:
+    - variable: http_port
+      label: "HTTP Port"
+      required: true
+      default: 80
+      type: "int"
+    - variable: https_port
+      label: "HTTPS Port"
+      required: true
+      default: 443
+      type: "int"
+    - variable: path_to_certs
+      label: "Path to certs"
+      required: true
+      type: "string"

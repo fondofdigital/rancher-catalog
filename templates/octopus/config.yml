@@ -1,0 +1,7 @@
+name: Octopus
+description: |
+  Enterpise Service Bus (connect with Airtable, Magento, ....)
+version: 1.0.0
+category: ESB
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://bitbucket.org/fondofbags/octopus

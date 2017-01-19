@@ -1,0 +1,30 @@
+.catalog:
+  name: "Octopus"
+  version: "1.0.0"
+  description: "Enterpise Service Bus (connect with Airtable, Magento, ....)"
+  uuid: octopus-0
+  questions:
+    - variable: subdomain
+      label: "Subdomain"
+      required: true
+      type: "string"
+    - variable: http_port
+      label: "HTTP Port"
+      required: true
+      default: 8080
+      type: "int"
+    - variable: api_port
+      label: "API Port"
+      required: true
+      default: 9990
+      type: "int"
+    - variable: wildfly_management_user
+      label: "User"
+      required: true
+      default: admin
+      type: "string"
+    - variable: wildfly_management_password
+      label: "Password"
+      required: true
+      default: admin
+      type: "password"
