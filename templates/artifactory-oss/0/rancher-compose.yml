@@ -1,0 +1,14 @@
+.catalog:
+  name: "artifactory (oss)"
+  version: "1.0.0"
+  description: "An open source maven repository manager"
+  uuid: artifactory-oss-0
+  questions:
+    - variable: subdomain
+      label: "Subdomain"
+      required: true
+      type: "string"
+    - variable: path_to_artifacts
+      label: "Path to artifacts"
+      required: true
+      type: "string"

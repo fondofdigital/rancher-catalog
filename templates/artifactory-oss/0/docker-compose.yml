@@ -1,0 +1,10 @@
+artifactory-oss:
+  image: docker.bintray.io/jfrog/artifactory-oss
+  ports:
+    - 8081
+  volumes:
+    - ${path_to_artifacts}:/var/opt/jfrog/artifactory
+  restart: always
+  environment:
+    VIRTUAL_HOST: ${subdomain}.docker.fondofbags.com
+    VIRTUAL_PORT: 8081
