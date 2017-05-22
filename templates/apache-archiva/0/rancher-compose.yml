@@ -2,7 +2,7 @@
   name: "apache archiva"
   version: "1.0.0"
   description: "An open source maven repository manager"
-  uuid: artifactory-oss-0
+  uuid: apache-archiva-0
   questions:
     - variable: http_port
       label: "HTTP Port"

@@ -1,4 +1,4 @@
-artifactory-oss:
+apache-archiva:
   image: registry.docker.fondofbags.com:5005/docker/apache-archiva:2.2.3
   ports:
     - ${http_port}:8080
