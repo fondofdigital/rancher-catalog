@@ -4,6 +4,7 @@ apache-archiva:
     - ${http_port}:8080
   volumes:
     - ${path_to_data}:/opt/apache/archiva/data/
+    - ${path_to_repositories}:/opt/apache/archiva/repositories/
   restart: always
   environment:
     VIRTUAL_HOST: ${subdomain}.docker.fondofbags.com

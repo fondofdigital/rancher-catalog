@@ -17,3 +17,7 @@
       label: "Path to data"
       required: true
       type: "string"
+    - variable: path_to_repositories
+      label: "Path to data"
+      required: true
+      type: "string"
