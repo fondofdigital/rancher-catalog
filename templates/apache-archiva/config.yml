@@ -1,0 +1,7 @@
+name: apache archiva
+description: |
+  An open source maven repository manager
+version: 1.0.0
+category: maven repository manager
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://archiva.apache.org/

@@ -1,0 +1,19 @@
+.catalog:
+  name: "apache archiva"
+  version: "1.0.0"
+  description: "An open source maven repository manager"
+  uuid: artifactory-oss-0
+  questions:
+    - variable: http_port
+      label: "HTTP Port"
+      required: true
+      default: 8080
+      type: "int"
+    - variable: subdomain
+      label: "Subdomain"
+      required: true
+      type: "string"
+    - variable: path_to_data
+      label: "Path to data"
+      required: true
+      type: "string"

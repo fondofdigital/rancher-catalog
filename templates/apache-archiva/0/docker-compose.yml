@@ -1,0 +1,10 @@
+artifactory-oss:
+  image: registry.docker.fondofbags.com:5005/docker/apache-archiva:2.2.3
+  ports:
+    - ${http_port}:8080
+  volumes:
+    - ${path_to_data}:/opt/apache/archiva/data/
+  restart: always
+  environment:
+    VIRTUAL_HOST: ${subdomain}.docker.fondofbags.com
+    VIRTUAL_PORT: 8080
