@@ -1,7 +1,0 @@
-name: artifactory (oss)
-description: |
-  An open source maven repository manager
-version: 1.0.0
-category: maven repository manager
-maintainer: Daniel Rose <daniel.rose@fondofbags.com>
-projectURL: https://github.com/jwilder/nginx-proxy

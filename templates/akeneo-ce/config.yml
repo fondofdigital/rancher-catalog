@@ -1,0 +1,7 @@
+name: akeneo Community Edition
+description: |
+  An open source product information management
+version: 1.0.0
+category: product information management
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: https://www.akeneo.com/

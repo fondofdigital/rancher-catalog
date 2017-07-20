@@ -1,0 +1,26 @@
+.catalog:
+  name: "akeneo Community Edition"
+  version: "1.0.0"
+  description: "An open source product information management"
+  uuid: akeneo-ce-0
+  questions:
+    - variable: virtual_host
+      label: "Virtual Host"
+      required: true
+      type: "string"
+    - variable: le_email
+      label: "Let's Encrypt Mail"
+      required: true
+      type: "string"
+    - variable: db_password
+      label: "Database Password"
+      required: true
+      type: "password"
+    - variable: db_root_password
+      label: "Database Root Password"
+      required: true
+      type: "password"
+    - variable: token_secret
+      label: "Token Secret"
+      required: true
+      type: "string"

@@ -1,0 +1,25 @@
+web:
+  image: registry.docker.fondofbags.com:5005/docker/akeneo-ce:1.7
+  links:
+    - db
+  ports:
+    - 80
+    - 443
+  environment:
+    VIRTUAL_HOST: ${virtual_host}
+    DATABASE_PASSWORD: ${db_password}
+    TOKEN_SECRET: ${token_secret}
+  labels:
+    rap.host: ${virtual_host}
+    rap.proto: https
+    rap.le_email: ${le_email}
+
+db:
+  image: mysql:5.6
+  ports:
+    - 3306
+  environment:
+    MYSQL_ROOT_PASSWORD: ${db_root_password}
+    MYSQL_USER: akeneo_pim
+    MYSQL_PASSWORD: ${db_password}
+    MYSQL_DATABASE: akeneo_pim
