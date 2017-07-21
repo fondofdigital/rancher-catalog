@@ -11,8 +11,7 @@ web:
     TOKEN_SECRET: ${token_secret}
   labels:
     rap.host: ${virtual_host}
-    rap.proto: https
-    rap.le_email: ${le_email}
+    rap.le_host: ${virtual_host}
 
 db:
   image: mysql:5.6
