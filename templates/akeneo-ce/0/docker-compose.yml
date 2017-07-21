@@ -9,6 +9,7 @@ web:
     VIRTUAL_HOST: ${virtual_host}
     DATABASE_PASSWORD: ${db_password}
     TOKEN_SECRET: ${token_secret}
+    TRUSTED_PROXIES: ${trusted_proxies}
   labels:
     rap.host: ${virtual_host}
     rap.le_host: ${virtual_host}

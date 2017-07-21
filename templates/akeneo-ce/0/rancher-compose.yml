@@ -8,10 +8,6 @@
       label: "Virtual Host"
       required: true
       type: "string"
-    - variable: le_email
-      label: "Let's Encrypt Mail"
-      required: true
-      type: "string"
     - variable: db_password
       label: "Database Password"
       required: true
@@ -23,4 +19,8 @@
     - variable: token_secret
       label: "Token Secret"
       required: true
+      type: "string"
+    - variable: trusted_proxies
+      label: "Trusted Proxies"
+      required: false
       type: "string"
