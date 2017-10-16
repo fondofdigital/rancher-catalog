@@ -1,0 +1,10 @@
+.catalog:
+  name: "Apache ActiveMQ"
+  version: "1.0.0"
+  description: "Apache ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client."
+  uuid: apache-activemq-0
+  questions:
+    - variable: virtual_host
+      label: "Virtual Host"
+      required: true
+      type: "string"

@@ -1,0 +1,14 @@
+apache-activemq:
+  image: registry.docker.fondofbags.com:5005/docker/apache-activemq:5.14.5
+  ports:
+    - 61616
+    - 5672
+    - 61613
+    - 1883
+    - 61614
+    - 8161
+  environment:
+    VIRTUAL_HOST: ${virtual_host}
+  labels:
+    rap.host: ${virtual_host}
+    rap.port: 8161

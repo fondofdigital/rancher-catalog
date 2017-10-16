@@ -1,0 +1,7 @@
+name: Apache ActiveMQ
+description: |
+  Apache ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client.
+version: 1.0.0
+category: Message queues
+maintainer: Daniel Rose <daniel.rose@fondofbags.com>
+projectURL: http://activemq.apache.org/
